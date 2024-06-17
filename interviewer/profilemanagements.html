@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: blue;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .profile-info {
+      margin-bottom: 20px;
+    }
+
+    .profile-info label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .profile-info input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #666;
+      border-radius: 4px;
+    }
+
+    .profile-info input[type="submit"] {
+      width: 50%;
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+      background-color: #428bca;
+      color: white;
+      cursor: pointer;
+	  align:right;
+    }
+	.edit-button {
+      text-align: right;
+    }
+
+    .profile-info input[type="submit"]:hover {
+      background-color: solid-blockquote;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Profile Management</h2>
+    <form id="profile-form">
+      <div class="profile-info">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+      </div>
+      <div class="profile-info">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+      </div>
+      <div class="profile-info">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+      </div>
+      <div class="profile-info">
+        <input type="submit" value="Edit Profile">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

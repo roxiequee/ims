@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send Interview Invitations</title>
+<link rel="stylesheet" href="Invitation.css">
+</head>
+<body>
+<div class="container">
+    <h2>Send Interview Invitations</h2>
+    <form action="Invitation.php" method="post">
+        <label for="candidate_email">Candidate Email:</label>
+        <input type="email" id="candidate_email" name="candidate_email" required>
+        
+        <label for="interviewer">Interviewer Name:</label>
+        <input type="text" id="interviewer" name="interviewer" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <label for="available_times">Available Time Slots:</label>
+        <select id="available_times" name="available_times" required>
+            <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+            <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+            <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+            <!-- Add more time slots as needed -->
+        </select>
+        
+        <input type="submit" value="Send Invitation">
+    </form>
+</div>
+</body>
+</html>

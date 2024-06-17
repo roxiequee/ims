@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Interview Request</title>
+<link rel="stylesheet" href="Interview_request.css">
+</head>
+<body>
+<div class="container">
+    <h2>REQUEST FOR THE INTERVIEW</h2>
+    <form action="Interview_request.php" method="post">
+
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" placeholder="Job title" required>
+        
+        <label for="interview_type">Interview Type:</label>
+        <select id="interview_type" name="interview_type" required>
+            <option value="phone">Phone Interview</option>
+            <option value="in_person">In-Person Interview</option>
+            <option value="video">Video Interview</option>
+            <!-- Add more options as needed -->
+        </select>
+        
+        <label for="candidate_name">Candidate Name:</label>
+        <input type="text" id="candidate_name" name="candidate_name" required>
+        
+        <label for="interview_date">Interview Date:</label>
+        <input type="date" id="interview_date" name="interview_date" required>
+        
+        <label for="interview_time">Interview Time:</label>
+        <input type="time" id="interview_time" name="interview_time" required>
+        
+        <label for="other_details">Other Details:</label>
+        <textarea id="other_details" name="other_details" rows="4" placeholder="Please provide any important details"></textarea>
+        
+        <input type="submit" value="Submit Request">
+    </form>
+</div>
+</body>
+</html>

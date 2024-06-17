@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generate Reports</title>
+<link rel="stylesheet" href="Report.css">
+</head>
+<body>
+<div class="container">
+    <h2>Generate Reports</h2>
+    <form action="Report.php" method="post">
+        <label for="report_type">Select Report Type:</label>
+        <select name="report_type" id="report_type">
+            <option value="interview_feedback">Interview Feedback</option>
+            <option value="candidate_evaluations">Candidate Evaluations</option>
+            <!-- Add more report types as needed -->
+        </select>
+        <button type="submit">Generate Report</button>
+    </form>
+    <div class="report">
+        <?php include 'generate_reports.php'; ?>
+    </div>
+</div>
+</body>
+</html>

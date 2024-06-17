@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Management</title>
+  <link rel="stylesheet" href="indexes.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .profile-info {
+      margin-bottom: 20px;
+    }
+
+    .profile-info label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .profile-info input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #666;
+      border-radius: 4px;
+      color: transparent; /* Badilisha rangi kuwa wazi */
+    }
+
+    .profile-info input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #666;
+      border-radius: 4px;
+    }
+
+    .profile-info input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #428bca;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .profile-info input[type="submit"]:hover {
+      background-color: #3071a9;
+    }
+
+    /* Kuweka kifungo cha "Edit Profile" kulia */
+    .edit-button {
+      text-align: right;
+    }
+  </style>
+</head>
+<!-- <body>
+  <aside class="header">
+    <div class="profile-picture">
+        <img src="https://images.unsplash.com/photo-1712249764665-15da106b4be8?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Profile Picture">
+        <div class="profile-name">
+            <h3>
+                rozina mbele
+                </h2>
+        </div>
+    </div>
+
+
+    <div class="aside-wrapper">
+        <ul class="navigation-menu">
+            <li>
+                <a href="#">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span>Profile management</span>
+                </a>
+            </li>
+            <li>
+                <a href="/schedule.html">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <span>Interview scheduling</span>
+                </a>
+            </li>
+            <li>
+                <a href="instruction.html">
+                    <ion-icon name="information-outline"></ion-icon>
+                    <span>Instruction</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                    <span>Communication-video</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                    <span>Request</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <span>Notification</span>
+                </a>
+            </li>
+            <li>
+                <a href="faq.html">
+                    <ion-icon name="help-outline"></ion-icon>
+                    <span>Help and support</span>
+                </a>
+            </li>
+        </ul>
+        <a href="home.html" class="logout">
+            <ion-icon name="log-out-outline"></ion-icon>
+            <span>Log out</span>
+        </a>
+    </div>
+</aside> -->
+
+
+<main class="main-content">
+    <header class="topbar">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <span>Interviewee</span>
+                <h2>information management</h2>
+            </div>
+        </div>
+    </header>
+  <div class="container">
+    <h2>Profile Management</h2>
+    <form id="profile-form">
+      <!-- Picha ya Wasifu -->
+      <div class="profile-info">
+        <label for="profile-image">Profile Image:</label>
+        <input type="file" id="profile-image" name="profile-image">
+      </div>
+
+      <!-- Maelezo Mengine ya Wasifu -->
+      <div class="profile-info">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" value="John Doe">
+      </div>
+      <div class="profile-info">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value="johndoe@example.com">
+      </div>
+      <div class="profile-info">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" value="123-456-7890">
+      </div>
+
+      <!-- Kifungo cha "Edit Profile" kimehamishwa kwenda kulia -->
+      <div class="profile-info edit-button">
+        <input type="submit" value="Edit Profile">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

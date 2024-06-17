@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(55, 134, 125, 0.75),rgb(22, 93, 95)),url(pexels-edmond-dantes-4344677.jpg);
+    margin: 20px;
+    background-position: center;
+    background-size: cover;
+} */
+
+.contact{
+    width: 90%;
+}
+.contact p{
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+.contact-left{
+    background: transparent;
+}
+.contact-right{
+    background: transparent;
+    flex-basis: 40%;
+    border: 2px solid #7d92a1 ;
+    padding: 16px;
+    margin: 12px 0;
+
+}
+.contact-right h3{
+    text-align: center;
+    color: #0f2e4e;
+    font-size: 20px;
+}
+.contact-right tr{
+    text-align: start;
+    padding: 20px;
+}
+
+.contact-right td{
+    color: #0f2e4e;
+    padding: 30px;
+    text-align: center;
+}
+.contact h2{
+    font-size: 40px;
+    color: #0f2e4e;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.contact form{
+    width: 600px;
+    text-align: center;
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+}
+.field .item  {
+    width: 100%;  
+    padding: 16px;
+    background: transparent;
+    border: 2px solid #7d92a1;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #0f2e4e;
+    margin: 12px 0;
+}
+.field .item::placeholder{
+    color: rgba(233, 115, 120,1 4);
+}
+.field .error-txt{
+    font-size: 17px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+form .text-area-field{
+    resize: none;
+}
+form button{
+    padding: 12px 32px;
+    background: #0f2e4e;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: .5s;
+}
+form button:hover{
+    box-shadow: none;
+}

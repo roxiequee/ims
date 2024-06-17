@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interviewer Dashboard - Manage Interviews</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .interview-list {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .interview-list th, .interview-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .interview-list th {
+    background-color: #f2f2f2;
+  }
+
+  .interview-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .interview-list tr:hover {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Manage Interviews</h2>
+  
+  <!-- Scheduled Interviews -->
+  <h3>Upcoming Interviews</h3>
+  <table class="interview-list">
+    <thead>
+      <tr>
+        <th>Candidate Name</th>
+        <th>Position</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>..</td>
+        <td>..</td>
+        <td>...</td>
+        <td>..</td>
+        <td>...</td>
+        <td>
+          <button><a href="true.html">Edit</a></button>
+          <button>Cancel</button>
+          <button>Add Notes</button>
+        </td>
+      </tr>
+      <!-- Add more rows for other interviews -->
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

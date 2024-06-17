@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Weka background kuwa nyeusi */
+    color: white; /* Maandishi yote yawe nyeupe */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Weka meza katikati ya ukurasa */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333; /* Weka rangi ya background ya vichwa vya meza */
+}

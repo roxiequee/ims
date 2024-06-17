@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="name2.php" method="POST" target="_blank">
+        
+        <label for="registrationNumber">Registration number</label>
+        <input type="number" name="reistrationNumber" placeholder="enter the registration number">
+        <br><br>
+        <label for="Firstname">First name</label>
+        <input type="text" name="Firstname" placeholder="Enter Firstname" required>
+        <br><br>
+
+        <label for="Middlename">Middle name</label>
+        <input type="text" name="Middlename" placeholder="Enter Middlename" required>
+        <br><br>
+
+        <label for="Lastname">last name</label>
+        &nbsp;&nbsp;
+        <input type="text" name="Lastname" placeholder="Enter lastname" required>
+        <br><br>
+
+        <label for="Gender">Gender</label> <br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+        <label for="Age">Age</label>
+        <input type="number" name="age" placeholder="Enter age" required>
+        <br><br>
+
+        <select name="Course" id="course">
+            <option value="">Information security</option>
+            <option value="">Banking and finance</option>
+            <option value="">Tax management</option>
+            <option value="">Metrology</option>
+            <option value="">Clinical medicine</option>
+            <option value="">Marketing</option>
+            <option value="">Tourism</option>
+            <option value="">Environmental management</option>
+        </select>
+        <br><br>
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+    
+</body>
+</html>

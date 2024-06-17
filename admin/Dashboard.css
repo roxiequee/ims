@@ -1,0 +1,86 @@
+/* CSS styles for the dashboard layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: blue ;
+    color: #fff;
+    text-align: center;
+    padding: 10px ;
+    
+}
+
+   .container li:hover {
+     
+    color:   black;
+    border-radius: 5px;
+    transform: translateX(.5rem);
+    transition: all .3s ease-in-out;
+} 
+aside li a:hover {
+    background-color: rgba(226, 226, 236, 0.9);
+    color:   black;
+    border-radius: 2px;
+    transform: translateX(.5rem);
+    transition: all .3s ease-in-out;
+    color: var(--bg-color-dark);
+}
+ 
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+ a{
+    color: white;
+    text-decoration: none; 
+
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    
+     
+    width: 20%;
+    background-color:  blue;
+    
+}
+p{
+    margin-bottom: 10%;
+}
+
+section {
+    flex: 3;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px ;
+    height: 20%;
+}
+.container h2 {
+    color: black;
+    padding: 5%;
+    text-align: center;
+}

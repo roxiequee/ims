@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+        }
+        header {
+            background-color: #1e90ff; /* DodgerBlue */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #4682b4; /* SteelBlue */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e6f7ff; /* Very light blue */
+            border-radius: 10px;
+        }
+        .welcome-section h1 {
+            color: #1e90ff;
+        }
+        .welcome-section p {
+            color: #333;
+            font-size: 1.2em;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .feature {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+        .feature h3 {
+            color: #1e90ff;
+        }
+        .footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interview Management System</h1>
+    </header>
+    <nav>
+    <a href="home1.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.php">Features</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="welcome-section" id="home">
+            <h1>Welcome to the Interview Management System</h1>
+            <p>Your all-in-one solution to manage interview processes efficiently.</p>
+        </section>
+        <section class="features" id="features">
+            <div class="feature">
+                <h3>Schedule Interviews</h3>
+                <p>Easily schedule interviews with candidates and panel members.</p>
+            </div>
+            <div class="feature">
+                <h3>Track Progress</h3>
+                <p>Keep track of each candidate's progress through different stages.</p>
+            </div>
+            <div class="feature">
+                <h3>Generate Reports</h3>
+                <p>Generate detailed reports on interview outcomes and performance.</p>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Interview Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

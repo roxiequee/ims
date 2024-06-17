@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Interview Request</title>
+<link rel="stylesheet" href="create_interview_request.css">
+</head>
+<body>
+<div class="container">
+    <h2>Create Interview Request</h2>
+    <form action="process_interview_request.php" method="post">
+        <label for="candidate_name">Candidate Name:</label>
+        <input type="text" id="candidate_name" name="candidate_name" required>
+        
+        <label for="interview_date">Interview Date:</label>
+        <input type="date" id="interview_date" name="interview_date" required>
+        
+        <label for="interview_time">Interview Time:</label>
+        <input type="time" id="interview_time" name="interview_time" required>
+        
+        <label for="interviewer_name">Interviewer Name:</label>
+        <input type="text" id="interviewer_name" name="interviewer_name" required>
+        
+        <input type="submit" value="Submit Request">
+    </form>
+</div>
+</body>
+</html>

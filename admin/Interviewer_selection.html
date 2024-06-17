@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Interview Request</title>
+<link rel="stylesheet" href="Interviewer_selection.css">
+</head>
+<body>
+<div class="container">
+    <h2>SELECT INTERVIEWER HERE</h2>
+    <form action="Interviewer_selection.php" method="post">
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" required>
+        
+        <label for="interview_type">Interview Type:</label>
+        <select id="interview_type" name="interview_type" required>
+            <option value="phone">Phone Interview</option>
+            <option value="in_person">In-Person Interview</option>
+            <option value="video">Video Interview</option>
+            <!-- Add more options as needed -->
+        </select>
+        
+        <label for="candidate_name">Candidate Name:</label>
+        <input type="text" id="candidate_name" name="candidate_name" required>
+        
+        <label for="interview_date">Interview Date:</label>
+        <input type="date" id="interview_date" name="interview_date" required>
+        
+        <label for="interview_time">Interview Time:</label>
+        <input type="time" id="interview_time" name="interview_time" required>
+        
+        <label for="interviewers">Select Interviewers:</label>
+        <select id="interviewers" name="interviewers[]" multiple required>
+            <option value="interviewer1">Interviewer 1</option>
+            <option value="interviewer2">Interviewer 2</option>
+            <option value="interviewer3">Interviewer 3</option>
+            <option value="interviewer3">Interviewer 4</option>
+            <option value="interviewer3">Interviewer 5</option>
+            <option value="interviewer3">Interviewer 6</option>
+            <!-- Add more interviewers as needed -->
+        </select>
+        
+        <label for="other_details">Other Details:</label>
+        <textarea id="other_details" name="other_details" rows="4"></textarea>
+        
+        <input type="submit" value="Submit Request">
+    </form>
+</div>
+</body>
+</html>

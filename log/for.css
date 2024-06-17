@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+.cv-container{
+    width: 100%;
+    height: 100vh;
+    
+}
+.cv-container h3{
+    text-align: center;
+    color: lavender;
+    margin-bottom: 20px;
+    
+}
+.cv-form{
+    width: 500px;
+    height: 570px;
+    text-align: center;
+    border: 5px solid rgb(172, 172, 226);
+    padding: 5px;
+    margin-left: 500px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+body{
+    background: rgb(9, 43, 49);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.cv-form input{
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    width: 400px;
+    border-radius: 5px;
+    height: 32px;
+    border: 5px;
+}
+.cv-form label{
+    display: flex;
+    margin-left: 20px;
+    width: 100%;
+    color: lavender;
+    margin-top: 1px;
+}
+.kind{
+    display: flex;
+}
+.kind .input{
+    font-size: 225px;
+}

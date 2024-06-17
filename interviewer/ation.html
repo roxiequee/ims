@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interviewer Dashboard - Manage Interviews</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .interview-list {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .interview-list th, .interview-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .interview-list th {
+    background-color: #f2f2f2;
+  }
+
+  .interview-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .interview-list tr:hover {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Manage Interviews</h2>
+  
+  <!-- Scheduled Interviews -->
+  <h3>Upcoming Interviews</h3>
+  <table class="interview-list">
+    <thead>
+      <tr>
+        <th>Candidate Name</th>
+        <th>Position</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>Software Engineer</td>
+        <td>April 15, 2024</td>
+        <td>10:00 AM</td>
+        <td>Confirmed</td>
+        <td>
+          <button onclick="editInterview()">Edit</button>
+          <button onclick="cancelInterview()">Cancel</button>
+          <button onclick="addNotes()">Add Notes</button>
+        </td>
+      </tr>
+      <!-- Add more rows for other interviews -->
+    </tbody>
+  </table>
+</div>
+
+<script>
+  function editInterview() {
+    // Implement logic to allow the interviewer to edit the interview details
+    alert("Edit interview functionality will be implemented here.");
+  }
+
+  function cancelInterview() {
+    // Implement logic to allow the interviewer to cancel the interview
+    alert("Cancel interview functionality will be implemented here.");
+  }
+
+  function addNotes() {
+    // Implement logic to allow the interviewer to add notes to the interview
+    alert("Add notes functionality will be implemented here.");
+  }
+</script>
+
+</body>
+</html>
