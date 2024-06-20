@@ -27,9 +27,15 @@ $result = $conn->query($sql);
 
 echo "
 <style>
+    :root {
+        --bg-color: #050C9C;
+        --secondary-color: #6DC5D1;
+        --text-color: #151515;
+    }
     table {
         text-align: center;
         width: 100%;
+        background-color: var(--secondary-color);
     }
 </style>
 <table border=1 align='center' bgcolor='yellow'>
@@ -39,7 +45,7 @@ echo "
         <th>Interview Date</th>
         <th>Interview Time</th>
         <th>Result</th>
-        
+
     </tr>";
 
 if ($result->num_rows > 0) {

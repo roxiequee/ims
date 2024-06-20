@@ -1,7 +1,11 @@
 :root {
     --bg-color: #050C9C;
-    --secondary-color: #536162;
-    --text-color: #f2f2f2ff;
+    --secondary-color: #6DC5D1;
+    --text-color: #151515;
+}
+
+a{
+    color: var(--text-color);
 }
 
 
@@ -10,6 +14,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
+    color: var(--text-color);
 }
 
 table {
@@ -20,7 +25,7 @@ table {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-a {
+.action-link{
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;

@@ -58,10 +58,47 @@ if (isset($_GET['namba'])) {
 <html>
 <head>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         form {
-            background-color: grey;
-            margin-left: 4%;
-            padding: 20%;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            color: #1a1aff;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #1a1aff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #0000e6;
         }
     </style>
     <title>Edit Record</title>
@@ -70,6 +107,7 @@ if (isset($_GET['namba'])) {
     <form method="POST" action="edit.php?namba=<?php echo htmlspecialchars($id); ?>" autocomplete="off">
         <label for="id">ID:</label><br>
         <input type="number" id="id" name="id" value="<?php echo htmlspecialchars($row['id']); ?>" readonly><br><br>
+
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" value="<?php echo htmlspecialchars($row['username']); ?>"><br><br>
 

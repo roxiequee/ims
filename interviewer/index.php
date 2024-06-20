@@ -1,16 +1,14 @@
-
-/*
 <?php
 session_start();
 
 // Assuming user ID is stored in the session after login
 if (isset($_SESSION['user'])) {
     $user_id = $_SESSION['user'];
-    echo $_SESSION['use'];
+    // echo $_SESSION['use'];
 } else {
     die("User not logged in");
 }
-?>*/
+?>
 
 
 
@@ -45,14 +43,14 @@ if (isset($_SESSION['user'])) {
 
         <h2 >INTERVIEW MANAGEMENT SYSTEM </h2>
         <ul>
-            <li><a href="about1.html" target="dashboard_content">about us</a></li><br><br> 
+            <!-- <li><a href="about1.html" target="dashboard_content">about us</a></li><br><br>  -->
             <li><a href="update_profile.php" target="dashboard_content">interviewer-profile</a></li><br><br> 
             <li><a href="create report.php" target="dashboard_content">create report</a></li><br><br> 
             <li><a href="scheduleinterface.php" target="dashboard_content">sheduling-iinterface</a></li><br> <br>
             <!-- <li><a href="instr.html" target="dashboard_content">instruction</a></li><br><br>  -->
-            <li><a href="../group-video-chat/index.html" target="dashboard_content">live</a></li><br><br>               
+            <!-- <li><a href="../group-video-chat/index.html" target="dashboard_content">live</a></li><br><br>                -->
             <li><a href="tar.html" target="dashboard_content">interviewee-information</a></li><br><br> 
-            <li><a href="contact1.html" target="dashboard_content">concatus</a></li><br><br>
+            <li><a href="contact1.html" target="dashboard_content">concat us</a></li><br><br>
             <!-- <li><a href="help.htm" target="dashboard_content">help</a></li><br><br>  -->
             <li><a href="logout.php">Logout</a></li>             
         </ul>

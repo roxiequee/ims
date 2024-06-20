@@ -16,15 +16,43 @@ $result = $conn->query($sql);
 
 echo "
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
         table {
-            text-align: center;
             width: 100%;
             border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e6f7ff;
         }
         .thumbnail {
-            width: 60px; /* Adjust size of image thumbnail */
+            width: 60px;
             height: 60px;
-            cursor: pointer; /* Pointer to indicate clickable image */
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1);
         }
         .modal {
             display: none;
@@ -44,20 +72,35 @@ echo "
             text-align: center;
             max-width: 80%;
             max-height: 80%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         .modal-content img {
             max-width: 90%;
             max-height: 90vh;
         }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-    <table border='1' align='center' bgcolor='yellow'>
+    <table>
         <tr>
             <th>ID</th>
-            <th>First Name</th>
-            <th>Middle Name</th>
-            <th>Last Name</th>
-            <th>Image</th>
+            <th>Username</th>
+            <th>Password</th>
             <th>Email</th>
+            <th>Image</th>
             <th>Role</th>
             <th>Action</th>
             <th>Update</th>
@@ -78,7 +121,7 @@ if ($result->num_rows > 0) {
     }
 } else {
     echo "<tr>
-            <td colspan='9'>No results found</td>
+            <td colspan='8'>No results found</td>
           </tr>";
 }
 

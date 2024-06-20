@@ -4,7 +4,7 @@ session_start();
 // Assuming user ID is stored in the session after login
 if (isset($_SESSION['user'])) {
     $user_id = $_SESSION['user'];
-    echo $_SESSION['use'];
+    // echo $_SESSION['use'];
 } else {
     die("User not logged in");
 }
@@ -40,7 +40,7 @@ if (isset($_SESSION['user'])) {
         <h2>INTERVIEW MANAGEMENT SYSTEM</h2>
 
         <ul>
-        <li><a href="about1.html" target="dashboard_content">about us</a></li><br>  <br>  
+        <!-- <li><a href="about1.html" target="dashboard_content">about us</a></li><br>  <br>   -->
             <li><a href="update_profile.php" target="dashboard_content">View Profile</a></li><br>  <br>    
             <li><a href="receive_cv.php" target="dashboard_content">receive_cv</li><br>  <br>       
             <li><a href="schedule.php" target="dashboard_content">schedule inter</a></li><br><br> 
